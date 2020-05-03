@@ -1,4 +1,4 @@
-package com.microfocus.tasks.task1;
+package com.microfocus.tasks.usereg;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

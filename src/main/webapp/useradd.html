@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> User Registration Form </title>
+	<link rel="shortcut icon" href="./kRc2zvcz_400x400.jpg" type="image/gif" sizes="10x10">
+</head>
+<body>
+<a href="./home.html"><p style="color:white"><b>Home<b></p></a>
+<a href="./admin.html"><p style="color:white"><b>Admin<b></p></a>
+<style>
+body {
+  background: #0000A0;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 100px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+  float: center;
+}
+
+select {
+  display: inline-block;
+  float: center;
+}
+
+
+</style>
+
+<script>
+function myFunction() {
+  location.replace("https://www.w3schools.com")
+}
+</script>
+
+<div class="content">
+
+
+<center>
+
+<h1>User Registration</h1>
+<h6>**All inputs are mandatory**</h6>
+
+<form action="http://10.204.105.209:8080/userapi/adduser" method="post">
+
+  <label for="fname"><b>First name:</b></label>
+  <input type="text" id="fname" name="fname" pattern="[A-Za-z]*" title="Only alphabets as allowed" required><br><br>
+  <label for="lname"><b>Last name:</b></label>
+  <input type="text" id="lname" name="lname" pattern="[A-Za-z]*" title="Only alphabets as allowed" required><br><br>
+  
+  <label for="gender"><b>Gender:</b></label>
+  <select id="gender" name="gender" required>
+	<option value="">N</option>
+	<option value="M">Male</option>
+	<option value="F">Female</option>
+	<option value="O">Other</option>
+  </select><br><br>
+
+  
+  <label for="dob"><b>Date of Birth:</b></label>
+  <input type="text" id="dob" name="dob" required><br><br>
+  
+  <label for="maritalstatus"><b>Marital Status:</b></label>
+  <select id="maritalstatus" name="maritalstatus" required>
+	<option value="">None</option>
+	<option value="single">Single</option>
+	<option value="married">Married</option>
+  </select><br><br>
+  
+  <label for="mobile"><b>Contact Number:</b></label>
+  <input type="text" id="mobile" name="mobile" pattern="[0-9]{10}" title="Ten digits only" required><br><br>
+  
+  <label for="email"><b>Email:</b></label>
+  <input type="text" id="email" name="email" required><br><br>
+  
+  <label for="city"><b>City:</b></label>
+  <input type="text" id="city" name="city" pattern="[A-Za-z]*" title="Only alphabets as allowed" required><br><br>
+  
+  <label for="state"><b>State:</b></label>
+  <input type="text" id="state" name="state" pattern="[A-Za-z]*" title="Only alphabets as allowed" required><br><br>
+  
+  <label for="country"><b>Country:</b></label>
+  <input type="text" id="country" name="country" pattern="[A-Za-z]*" title="Only alphabets as allowed" required><br><br>
+  
+  <label for="zipcode"><b>Zipcode:</b></label>
+  <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{6}" title="Six digits only" required> <br><br><br>
+  
+  
+  <input type="submit" value="Submit" formaction="./indexorig.html">
+  <input type="reset" value="Reset">
+  
+  
+  
+</form> 
+</center>
+</div>
+</body>
+
+</html>
